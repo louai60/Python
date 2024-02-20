@@ -1,4 +1,4 @@
-num1 = 42
+num1 = 42 #variable declaration
 num2 = 2.3
 boolean = True
 string = 'Hello World'
