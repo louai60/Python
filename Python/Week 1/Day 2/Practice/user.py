@@ -34,32 +34,32 @@ class User:
             print("not enough points to spend.")
         print('-' *40)
 
-# create user instances
+#user instances
 user1 = User("Louay", "Saafi", "louay.saafi@example.com", 25)
 user2 = User("Hama", "Hama", "hama.hama@example.com", 30)
 user3 = User("Aziz", "Kouki", "aziz.kouki@example.com", 35)
 
-# display user info
+#display info
 user1.display_info()
 user2.display_info()
 user3.display_info()
 
-# enroll users
+#enroll users
 user1.enroll()
 user2.enroll()
 
-# spend points
+#spend points
 user1.spend_points(50)
 user2.spend_points(80)
 user3.spend_points(40)
 
-# display updated user info
+#display updated user info
 user1.display_info()
 user2.display_info()
 user3.display_info()
 
-# Try to re-enroll the first user
+#re-enroll the first user
 user1.enroll()
 
-# Prevent over-spending on the third user
+
 user3.spend_points(40)
