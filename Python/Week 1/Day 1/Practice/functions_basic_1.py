@@ -1,43 +1,126 @@
-for i in range(1,151):
-    print(i)
+#1
+def number_of_food_groups():
+    return 5
+print(number_of_food_groups())
 
 
-#Multiples of Five
-for i in range(5,1000,5):
-    print(i)
+#3
+def number_of_books_on_hold():
+    return 5
+print(number_of_books_on_hold())
 
 
-#Counting, the Dojo Way 
-for i in range(1, 101):
-    if i % 10 == 0:
-        print("Coding Dojo")
-    elif i % 5 == 0:
-        print("Coding")
+#4
+def number_of_fingers():
+    return 5
+print(number_of_fingers())
+
+
+#5
+def number_of_great_lakes():
+    print(5)
+x = number_of_great_lakes()
+print(x)
+
+
+#6
+def add(b,c):
+    return (b+c)
+print(add(1,2) + add(2,3))
+
+
+#7
+def concatenate(b,c):
+    return str(b)+str(c)
+print(concatenate(2,5))
+
+
+#8
+def number_of_oceans_or_fingers_or_continents():
+    b = 100
+    print(b)
+    if b < 10:
+        return 5
     else:
-        print(i)
+        return 10
+print(number_of_oceans_or_fingers_or_continents())
 
 
+#9
+def number_of_days_in_a_week_silicon_or_triangle_sides(b,c):
+    if b<c:
+        return 7
+    else:
+        return 14
+print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3))
+print(number_of_days_in_a_week_silicon_or_triangle_sides(5,3))
+print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3) + number_of_days_in_a_week_silicon_or_triangle_sides(5,3))
+
+#2
+def number_of_military_branches():
+    return 5
+print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3) + number_of_military_branches())
 
 
-#Whoa. That Sucker's Huge 
-sum_of_odds = 0
-
-for i in range(1, 500001, 2):
-    sum_of_odds += i
-
-print(sum_of_odds)
+#10
+def addition(b,c):
+    return b+c
+print(addition(3,5))
 
 
-#Countdown by Fours 
-for i in range(2018,0,-4):
-    print(i)
+#11
+b = 500
+print(b)
+def foobar():
+    b = 300
+    print(b)
+print(b)
+foobar()
+print(b)
 
 
+#12
+b = 500
+print(b)
+def foobar():
+    b = 300
+    print(b)
+    return b
+print(b)
+foobar()
+print(b)
 
-#Flexible Counter
-low_num=3
-high_num=8
-mult=2
-for i in range(3,8+1):
-    if i%2==0:
-        print(i)
+
+#13
+b = 500
+print(b)
+def foobar():
+    b = 300
+    print(b)
+    return b
+print(b)
+b=foobar()
+print(b)
+
+
+#14
+def foo():
+    print(1)
+    bar()
+    print(2)
+def bar():
+    print(3)
+foo()
+
+
+#15
+def foo():
+    print(1)
+    x = bar()
+    print(x)
+    return 10
+def bar():
+    print(3)
+    return 5
+y = foo()
+print(y)
