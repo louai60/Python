@@ -1,0 +1,34 @@
+.title {
+    font-size: large;
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.main {
+    display: flex; 
+    justify-content: center;
+}
+
+.main form {
+    margin: 20px;
+}
+
+.visits {
+    text-align: center;
+}
+
+button {
+    padding: 10px 40px;
+}
+
+.click {
+    background: blue;
+    color: yellow;
+}
+
+.reset  {
+    background: red;
+    color: grey;
+}
