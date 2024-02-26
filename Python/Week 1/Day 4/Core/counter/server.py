@@ -16,6 +16,7 @@ def index():
 def click():
     # increment visit count
     session['visits'] += 1
+    # redirect to the route 
     return redirect('/')
 
 @app.route('/reset', methods=['POST'])
