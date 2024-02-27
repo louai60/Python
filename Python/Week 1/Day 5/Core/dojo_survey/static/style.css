@@ -1,0 +1,54 @@
+body {
+    font-size: large;
+}
+
+.container {
+    width: 30%;
+    margin-left: 500px;
+    background: hsl(207.27deg 9.73% 22.16%);
+    height: 500px;
+}
+
+.container h1 {
+    text-align: center;
+    color: hsl(44.88deg 99.19% 51.37%);
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form > * {
+  margin: 10px;  
+  padding: 5px 20px;
+  width: 100%;
+}
+
+label {
+    color: #fff;
+}
+
+button {
+    background: hsl(44.88deg 99.19% 51.37%);
+}
+
+.container2 {
+    width: 20%;
+    margin-left: 500px;
+    padding: 50px;
+    background: hsl(207.27deg 9.73% 22.16%);
+}
+
+.container2 h1 {
+    color: blue;
+}
+
+.container2 > * {
+    color: #fff;
+}
+
+
+
+
