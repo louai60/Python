@@ -19,4 +19,4 @@ DELETE FROM users
 WHERE id = 2;
 
 SELECT * FROM users
-ORDER BY first_name;
+ORDER BY first_name DESC;
