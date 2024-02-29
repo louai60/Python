@@ -1,0 +1,45 @@
+INSERT INTO dojos (name) 
+VALUES ('Dojo 1');
+INSERT INTO dojos (name) 
+VALUES ('Dojo 2');
+INSERT INTO dojos (name) 
+VALUES ('Dojo 3');
+
+SELECT  FROM ninjas WHERE dojo_id = 1;
+
+INSERT INTO dojos (name)
+VALUES ('Dojo 4');
+INSERT INTO dojos (name) 
+VALUES ('Dojo 5');
+INSERT INTO dojos (name) 
+VALUES ('Dojo 6');
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+VALUES (1, 'louay1', 'saafi1', 20),
+       (1, 'louay2', 'saafi2', 20),
+       (1, 'louay3', 'saafi3', 20);
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+VALUES (2, 'louay4', 'saafi4', 20),
+       (2, 'louay5', 'saafi5', 20),
+       (2, 'louay6', 'saafi6', 20);
+
+INSERT INTO ninjas (dojo_id, first_name, last_name, age)
+VALUES (3, 'louay7', 'saafi7', 20),
+       (3, 'louay8', 'saafi8', 20),
+       (3, 'louay9', 'saafi9', 20);
+
+SELECT  FROM ninjas WHERE dojo_id = 1;
+
+SELECT  FROM ninjas WHERE dojo_id = (SELECT MAX(id) FROM dojos);
+
+SELECT d. FROM dojos d
+JOIN ninjas n ON n.dojo_id = d.id
+ORDER BY n.id DESC LIMIT 1;
+
+SELECT n., d.name AS dojo_name FROM ninjas n
+JOIN dojos d ON n.dojo_id = d.id
+WHERE n.id = 6;
+
+SELECT n., d.name AS dojo_name FROM ninjas n
+JOIN dojos d ON n.dojo_id = d.id;
