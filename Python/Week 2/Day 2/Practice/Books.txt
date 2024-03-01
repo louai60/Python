@@ -1,0 +1,65 @@
+INSERT INTO users (name) 
+VALUES 
+    ('louay saafi'),
+    ('joe doe'),
+    ('jane doe'),
+    ('ahmed ahmed'),
+    ('aziz aziz');
+
+INSERT INTO books (name) 
+VALUES 
+    ('C sharp'),
+    ('java'),
+    ('python'),
+    ('php'),
+    ('ruby');
+
+UPDATE books SET name = 'C#' WHERE id = 1;
+
+UPDATE users SET name = 'Bill' WHERE id = 4;
+
+INSERT INTO favorites (user_id, book_id) 
+VALUES 
+    (1, 1),
+    (1, 2);
+
+-- Having the second user favorite the first 3 books
+INSERT INTO favorites (user_id, book_id) 
+VALUES 
+    (2, 1),
+    (2, 2),
+    (2, 3);
+
+INSERT INTO favorites (user_id, book_id) 
+VALUES 
+    (3, 1),
+    (3, 2),
+    (3, 3),
+    (3, 4);
+
+INSERT INTO favorites (user_id, book_id) 
+VALUES 
+    (4, 1),
+    (4, 2),
+    (4, 3),
+    (4, 4),
+    (4, 5);
+
+SELECT u.* 
+FROM users u 
+JOIN favorites f ON u.id = f.user_id 
+WHERE f.book_id = 3;
+
+DELETE FROM favorites WHERE user_id = 1 AND book_id = 3;
+
+INSERT INTO favorites (user_id, book_id) VALUES (5, 2);
+
+SELECT b.* 
+FROM books b 
+JOIN favorites f ON b.id = f.book_id 
+WHERE f.user_id = 3;
+
+SELECT u.* 
+FROM users u 
+JOIN favorites f ON u.id = f.user_id 
+WHERE f.book_id = 5;
