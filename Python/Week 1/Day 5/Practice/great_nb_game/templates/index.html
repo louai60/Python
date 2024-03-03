@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Number Game</title>
+</head>
+<body>
+    <h1>Welcome to the Great Number Game</h1>
+    {% if msg %}
+    <div style="color: {{ color }};">
+        <p>{{ msg }}</p>
+    </div>
+    {% endif %}
+    <form method="POST">
+        <label for="guess">I'm thinking of Number between 1 and 100</label>
+        <input type="number" id="guess" name="guess" min="1" max="100" required>
+        <button type="submit">Guess</button>
+    </form>
+</body>
+</html>
