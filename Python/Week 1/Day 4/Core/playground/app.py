@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-@app.route('/play')
+@app.route('/')
 def play():
     return render_template('index.html', times=3, color='hsl(180deg 99.21% 50.2%)')
 
