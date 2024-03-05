@@ -4,18 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Great Number Game</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .error {
+            background: #db3544;
+            padding: 50px;
+        }
+
+        p {
+            color: #fec008;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            background: grey;
+        }
+
+        input {
+            width: 100%;
+            margin: 20px;
+            padding: 5px 20px;
+        }
+
+        button {
+            width: 50%;
+            margin: 10px 90px;
+            padding: 10px;
+            background: #fec008;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the Great Number Game</h1>
-    {% if msg %}
-    <div style="color: {{ color }};">
-        <p>{{ msg }}</p>
-    </div>
-    {% endif %}
-    <form method="POST">
-        <label for="guess">I'm thinking of Number between 1 and 100</label>
-        <input type="number" id="guess" name="guess" min="1" max="100" required>
-        <button type="submit">Guess</button>
-    </form>
+    <div class="container">
+        <div class="main">
+            <h1>Welcome to the Great Number Game</h1>
+            <div>
+                {% if msg %}
+                    <div class="error">
+                        <p>{{ msg }}</p>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="box">
+                <form method="POST">
+                    <div class="box-top">
+                        <label for="guess">I'm thinking of Number between 1 and 100</label><br>
+                        <input type="number" id="guess" name="guess" min="1" max="100" required>
+                    </div>
+                    <button type="submit">Guess</button>
+                </form>
+            </div>
+        </div>
 </body>
 </html>
